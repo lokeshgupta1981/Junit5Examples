@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="JUnit5 BeforeEach" enabled="true" name="setup (JUnit5)">${:import(org.junit.jupiter.api.BeforeEach)}
+@BeforeEach
+public void setUp() {
+  ${cursor}
+}</template><template autoinsert="true" context="java" deleted="false" description="JUnit5 AfterEach" enabled="true" name="teardown (JUnit5)">${:import(org.junit.jupiter.api.AfterEach)}
+@AfterEach
+public void tearDown() {
+  ${cursor}
+}</template><template autoinsert="false" context="java-members" deleted="false" description="JUnit5 test method" enabled="true" id="org.eclipse.jdt.ui.templates.test" name="test (JUnit5)">${:import(org.junit.jupiter.api.Test)}
+@Test
+public void test${name}() {
+    ${staticImport:importStatic('org.junit.jupiter.api.Assertions.*')}
+    ${cursor}
+}</template></templates>
