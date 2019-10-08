@@ -8,13 +8,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.RepetitionInfo;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInfo;
 import org.junit.platform.runner.JUnitPlatform;
 import org.junit.runner.RunWith;
 
 @RunWith(JUnitPlatform.class)
-public class RepeatedTestExample {
+public class RepeatedInvocationsTest {
 	
 	@BeforeAll
 	public static void init(){
@@ -26,7 +25,6 @@ public class RepeatedTestExample {
 		System.out.println("Before Each initEach() method called");
 	}
 
-	@Test
 	@DisplayName("Add operation test")
 	@RepeatedTest(5)
 	void addNumber(TestInfo testInfo, RepetitionInfo repetitionInfo) 

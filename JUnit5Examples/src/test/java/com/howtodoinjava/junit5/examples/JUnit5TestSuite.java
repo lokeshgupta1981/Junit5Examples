@@ -10,6 +10,6 @@ import org.junit.runner.RunWith;
 @SelectPackages("com.howtodoinjava.junit5.examples")
 @IncludePackages("com.howtodoinjava.junit5.examples.packageC")
 @ExcludeTags("PROD")
-public class JUnit5TestSuiteExample {
+public class JUnit5TestSuite {
 
 }

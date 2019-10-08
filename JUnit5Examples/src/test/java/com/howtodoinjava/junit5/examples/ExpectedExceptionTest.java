@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(JUnitPlatform.class)
 @SelectPackages("com.howtodoinjava.junit5.examples")
-public class ExpectedExceptionExample 
+public class ExpectedExceptionTest 
 {
 	@Test
 	void testExpectedException() {
@@ -27,12 +27,12 @@ public class ExpectedExceptionExample
 		});
 	}
 	
-	@Test
+	/*@Test
 	void testExpectedExceptionFail() {
 	 
 	  Assertions.assertThrows(IllegalArgumentException.class, () -> {
 	    Integer.parseInt("1");
 	  });
 	 
-	}
+	}*/
 }
