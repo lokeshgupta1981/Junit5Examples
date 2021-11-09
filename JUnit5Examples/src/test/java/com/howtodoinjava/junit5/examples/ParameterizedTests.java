@@ -35,7 +35,7 @@ public class ParameterizedTests
 	
 	@ParameterizedTest
 	@ValueSource(ints = { 1, 2, 3 })
-	void testMethod(Integer argument) {
+	void testValueSource(Integer argument) {
 	    //test code
 	}
 	
@@ -88,10 +88,12 @@ public class ParameterizedTests
 	}
 
 	
-	@ParameterizedTest(name = "{index} - {0} is older than 40")
+	@ParameterizedTest
 	@ArgumentsSource(EmployeesArgumentsProvider.class)
-	void isEmployeeAgeGreaterThan40(Employee e) {
+	void testArgumentsSource(Employee e, LocalDate date, Direction d) {
 	    assertTrue(Period.between(e.getDob(), LocalDate.now()).get(ChronoUnit.YEARS) > 40);
+	    assertNotNull(date);
+	    assertNotNull(d);
 	}
 	
 	@ParameterizedTest
@@ -109,9 +111,9 @@ class EmployeesArgumentsProvider implements ArgumentsProvider {
     @Override
     public Stream<? extends Arguments> provideArguments(ExtensionContext context) {
         return Stream.of(
-          Arguments.of(new Employee(1, "Alex", LocalDate.of(1980, 2, 3))),
-          Arguments.of(new Employee(2, "Brian", LocalDate.of(1979, 2, 3))),
-          Arguments.of(new Employee(3, "Charles", LocalDate.of(1978, 2, 3)))
+          Arguments.of(new Employee(1, "Alex", LocalDate.of(1980, 2, 3)), LocalDate.now(), Direction.EAST),
+          Arguments.of(new Employee(2, "Brian", LocalDate.of(1979, 2, 3)), LocalDate.now(), Direction.NORTH),
+          Arguments.of(new Employee(3, "Charles", LocalDate.of(1978, 2, 3)), LocalDate.now(), Direction.SOUTH)
         );
     }
 }
