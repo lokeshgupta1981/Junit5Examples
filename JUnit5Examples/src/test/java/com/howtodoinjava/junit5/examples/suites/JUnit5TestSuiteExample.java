@@ -6,7 +6,7 @@ import org.junit.platform.suite.api.SelectPackages;
 
 @SelectPackages({"com.howtodoinjava.junit5.examples.packageA"
 				,"com.howtodoinjava.junit5.examples.packageB"})
-@IncludeClassNamePatterns({"^.*ATests?$"})L̥
+@IncludeClassNamePatterns({"^.*ATests?$"})
 @IncludeTags("production")
 public class JUnit5TestSuiteExample {
 
