@@ -3,36 +3,38 @@ package com.howtodoinjava.junit5.examples;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.platform.runner.JUnitPlatform;
-import org.junit.platform.suite.api.SelectPackages;
 import org.junit.runner.RunWith;
 
 @RunWith(JUnitPlatform.class)
-@SelectPackages("com.howtodoinjava.junit5.examples")
+//@SelectPackages("com.howtodoinjava.junit5.examples")
 public class ExpectedExceptionTest 
 {
 	@Test
 	void testExpectedException() {
 
-		Assertions.assertThrows(NumberFormatException.class, () -> {
+		NumberFormatException thrown = Assertions.assertThrows(NumberFormatException.class, () -> {
 			Integer.parseInt("One");
-		});
-
+		}, "NumberFormatException was expected");
+		
+		Assertions.assertEquals("For input string: \"One\"", thrown.getMessage());
 	}
 
 	@Test
-	void testExpectedExceptionWithSameType() {
+	void testExpectedExceptionWithParentType() {
 
 		Assertions.assertThrows(IllegalArgumentException.class, () -> {
 			Integer.parseInt("One");
 		});
 	}
 	
-	/*@Test
+	@Test
 	void testExpectedExceptionFail() {
 	 
-	  Assertions.assertThrows(IllegalArgumentException.class, () -> {
-	    Integer.parseInt("1");
-	  });
-	 
-	}*/
+		NumberFormatException thrown = Assertions
+					.assertThrows(NumberFormatException.class, () -> {
+						Integer.parseInt("1");
+					}, "NumberFormatException error was expected");
+		
+		Assertions.assertEquals("Some expected message", thrown.getMessage());
+	}
 }
