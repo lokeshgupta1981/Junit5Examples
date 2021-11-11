@@ -1,39 +1,40 @@
-package com.howtodoinjava.junit5.examples.odering;
+package com.howtodoinjava.junit5.examples.ordering;
 
 import static org.junit.Assert.assertTrue;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class OrderAnnotationTests {
-	@Order(5)
+@TestMethodOrder(MethodOrderer.DisplayName.class)
+public class DisplayNameOrderedTests
+{
+	@DisplayName("5")
 	@Test
 	void testE() {
 		assertTrue(true);
 	}
 
-	@Order(4)
+	@DisplayName("3")
 	@Test
 	void testA() {
 		assertTrue(true);
 	}
 
-	@Order(3)
+	@DisplayName("1")
 	@Test
 	void testD() {
 		assertTrue(true);
 	}
 
-	@Order(2)
+	@DisplayName("2")
 	@Test
 	void testC() {
 		assertTrue(true);
 	}
 
-	@Order(1)
+	@DisplayName("4")
 	@Test
 	void testB() {
 		assertTrue(true);

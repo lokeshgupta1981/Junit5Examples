@@ -1,4 +1,4 @@
-package com.howtodoinjava.junit5.examples.odering;
+package com.howtodoinjava.junit5.examples.ordering;
 
 import static org.junit.Assert.assertTrue;
 
@@ -6,9 +6,8 @@ import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
-@TestMethodOrder(MethodOrderer.MethodName.class)
-public class MethodNameOrderedTests 
-{
+@TestMethodOrder(MethodOrderer.Random.class)
+public class RandomOrderedTests {
 	@Test
 	void testE() {
 		assertTrue(true);

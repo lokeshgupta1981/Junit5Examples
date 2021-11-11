@@ -1,4 +1,4 @@
-package com.howtodoinjava.junit5.examples.odering;
+package com.howtodoinjava.junit5.examples.ordering;
 
 import java.util.Comparator;
 
