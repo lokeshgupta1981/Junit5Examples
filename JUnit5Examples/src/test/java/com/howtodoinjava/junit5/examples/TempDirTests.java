@@ -6,9 +6,9 @@ import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.List;
 
-import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 
 public class TempDirTests {
@@ -17,7 +17,7 @@ public class TempDirTests {
 	Path tempDir;
 
 	@Test
-	void tempDirectoryTestOne() throws IOException {
+	public void tempDirectoryTestOne() throws IOException {
 		Path tempFile = tempDir.resolve("test.txt");
 
 		List<String> lines = Arrays.asList("howtodoinjava.com");
@@ -29,7 +29,7 @@ public class TempDirTests {
 	}
 	
 	@BeforeEach
-	void setup(@TempDir Path tempDir) throws IOException {
+	public void setup(@TempDir Path tempDir) throws IOException {
 		Path tempFile = tempDir.resolve("test.txt");
 		Files.write(tempFile, Arrays.asList("some content"));
 	}

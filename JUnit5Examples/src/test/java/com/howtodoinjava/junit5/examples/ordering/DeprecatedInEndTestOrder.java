@@ -1,6 +1,6 @@
 package com.howtodoinjava.junit5.examples.ordering;
 
-import java.util.Comparator;
+import java.util.Comparator; 
 
 import org.junit.jupiter.api.MethodDescriptor;
 import org.junit.jupiter.api.MethodOrderer;
