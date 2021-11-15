@@ -8,8 +8,13 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInfo;
  
 public class AppTest {
+	
+	private AppTest(TestInfo testInfo) {
+	    System.out.println("Working on test " + testInfo.getDisplayName());
+	}
      
     @BeforeAll
     static void setup(){
