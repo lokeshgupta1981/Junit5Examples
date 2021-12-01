@@ -26,12 +26,28 @@ public class AppTest {
         System.out.println("@BeforeEach executed");
     }
      
-    @Tag("DEV")
+    //@Tag("DEV")
     @Test
-    void testCalcOne()
+    void testCalAdd()
     {
-        System.out.println("======TEST ONE EXECUTED=======");
+        System.out.println("======testCalAdd EXECUTED=======");
         Assertions.assertEquals( 4 , Calculator.add(2, 2));
+    }
+    
+    //@Tag("DEV")
+    @Test
+    void testCalSubtract()
+    {
+        System.out.println("======testCalSubtract EXECUTED=======");
+        Assertions.assertEquals( 2 , Calculator.subtract(4, 2));
+    }
+    
+    //@Tag("DEV")
+    @Test
+    void testCalMultiply()
+    {
+        System.out.println("======testCalMultiply EXECUTED=======");
+        Assertions.assertEquals( 4 , Calculator.multiply(2, 2));
     }
      
     @Tag("PROD")
