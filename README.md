@@ -4,40 +4,50 @@ This repository hosts the projects and their source codes written for various tu
 
 ## Related Tutorials
 
-1. [JUnit 5 Tutorial](https://howtodoinjava.com/junit-5-tutorial/)
-2. [JUnit 5 Test LifeCycle](https://howtodoinjava.com/junit5/junit-5-test-lifecycle/)
-3. [JUnit 5 @BeforeAll](https://howtodoinjava.com/junit5/before-all-annotation-example/)
-4. [JUnit 5 @BeforeEach](https://howtodoinjava.com/junit5/before-each-annotation-example/)
-5. [JUnit 5 @AfterEach](https://howtodoinjava.com/junit5/after-each-annotation-example/)
-6. [JUnit 5 @AfterAll](https://howtodoinjava.com/junit5/after-all-annotation-example/)
-7. [JUnit 5 @RepeatedTest](https://howtodoinjava.com/junit5/repeated-test-annotation-example/)
-8. [JUnit 5 @Disabled](https://howtodoinjava.com/junit5/junit-5-disabled-test-example/)
-9. [JUnit 5 @Tag](https://howtodoinjava.com/junit5/junit-5-tag-annotation-example/)
-10. [JUnit 5 expected exception](https://howtodoinjava.com/junit5/expected-exception-example/)
-11. [JUnit 5 Assertions](https://howtodoinjava.com/junit5/junit-5-assertions-examples/)
-12. [JUnit 5 Assumptions](https://howtodoinjava.com/junit5/junit-5-assumptions-examples/)
-13. [JUnit 5 Test Suites](https://howtodoinjava.com/junit5/junit5-test-suites-examples/)
-14. [JUnit 5 Maven Dependency](https://howtodoinjava.com/junit5/junit5-maven-dependency/)
-15. [JUnit 5 Test Templates for Eclipse](https://howtodoinjava.com/junit5/code-test-templates-eclipse/)
-16. [JUnit 5 vs JUnit 4](https://howtodoinjava.com/junit5/code-test-templates-eclipse/)
+* [JaCoCo Code Coverage with Maven](https://howtodoinjava.com/junit5/jacoco-test-coverage/)
 
-## Development Environment
+* [JUnit – Generating HTML Reports](https://howtodoinjava.com/junit5/junit-html-report/)
 
-* JUnit 5 
-* Maven 4
-* JDK 8
-* Eclipse Photon
+* [JUnit 5 – Conditional Test Execution](https://howtodoinjava.com/junit5/conditional-test-execution/)
 
-## To import this project into Eclipse IDE
+* [JUnit 5 Test Execution Order](https://howtodoinjava.com/junit5/test-execution-order/)
 
-If you want to import these project into your local eclipse setup - 
+* [JUnit 5 @Timeout](https://howtodoinjava.com/junit5/timeout/)
 
-1. Download the project as zip file into your computer
-2. Unzip the project at your desired location
-3. Import the project into Eclipse as existing maven project
+* [JUnit 5 @ParameterizedTest](https://howtodoinjava.com/junit5/parameterized-tests/)
 
-```
-File > Import... > Maven > Existing Maven Projects
-```
+* [JUnit 5 @TempDir – Temporary Directory Support](https://howtodoinjava.com/junit5/temporary-directory-support/)
 
-4. Done
+* [JUnit 5 vs JUnit 4](https://howtodoinjava.com/junit5/junit-5-vs-junit-4/)
+
+* [JUnit 5 Test Templates for Eclipse](https://howtodoinjava.com/junit5/code-test-templates-eclipse/)
+
+* [JUnit 5 Expected Exception – assertThrows() Example](https://howtodoinjava.com/junit5/expected-exception-example/)
+
+* [JUnit 5 @Disabled](https://howtodoinjava.com/junit5/junit-5-disabled-test-example/)
+
+* [JUnit 5 Assumptions](https://howtodoinjava.com/junit5/junit-5-assumptions-examples/)
+
+* [JUnit 5 Assertions Examples](https://howtodoinjava.com/junit5/junit-5-assertions-examples/)
+
+* [JUnit 5 Test LifeCycle](https://howtodoinjava.com/junit5/junit-5-test-lifecycle/)
+
+* [JUnit 5 with Gradle](https://howtodoinjava.com/junit5/junit-5-gradle-dependency-build-gradle-example/)
+
+* [JUnit 5 Maven Dependency](https://howtodoinjava.com/junit5/junit5-maven-dependency/)
+
+* [JUnit 5 @Tag Annotation](https://howtodoinjava.com/junit5/junit-5-tag-annotation-example/)
+
+* [JUnit 5 Test Suites](https://howtodoinjava.com/junit5/junit5-test-suites-examples/)
+
+* [JUnit 5 @RepeatedTest](https://howtodoinjava.com/junit5/repeated-test-annotation-example/)
+
+* [JUnit 5 @AfterAll](https://howtodoinjava.com/junit5/after-all-annotation-example/)
+
+* [JUnit 5 @AfterEach](https://howtodoinjava.com/junit5/after-each-annotation-example/)
+
+* [JUnit 5 @BeforeEach](https://howtodoinjava.com/junit5/before-each-annotation-example/)
+
+* [JUnit 5 @BeforeAll](https://howtodoinjava.com/junit5/before-all-annotation-example/)
+
+* [JUnit 5 – Execute Tests in Eclipse](https://howtodoinjava.com/junit5/execute-testcase-eclipse/)
