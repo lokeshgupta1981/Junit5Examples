@@ -25,7 +25,7 @@ public class ExpectedExceptionTest
 		});
 	}
 	
-	@Test
+	/*@Test
 	void testExpectedExceptionFail() {
 	 
 		NumberFormatException thrown = Assertions
@@ -34,5 +34,5 @@ public class ExpectedExceptionTest
 					}, "NumberFormatException error was expected");
 		
 		Assertions.assertEquals("Some expected message", thrown.getMessage());
-	}
+	}*/
 }

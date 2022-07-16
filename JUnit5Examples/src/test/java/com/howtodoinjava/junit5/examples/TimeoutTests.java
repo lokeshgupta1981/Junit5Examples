@@ -10,10 +10,10 @@ import org.junit.jupiter.api.Timeout;
 @Timeout(3)
 public class TimeoutTests {
 
-	@Test
+	/*@Test
 	void testMethodOne() throws InterruptedException {
 	    TimeUnit.SECONDS.sleep(5);
-	}
+	}*/
 	
 	@Test
 	@Timeout(5)

@@ -80,12 +80,12 @@ public class ParameterizedTests
 	    assertTrue(age > 0);
 	}
 	
-	@ParameterizedTest
+	/*@ParameterizedTest
 	@CsvFileSource(resources = "employeeData.csv", numLinesToSkip = 0)
 	void testWithCsvFileSource(String name, int age) {
 		assertNotNull(name);
 	    assertTrue(age > 0);
-	}
+	}*/
 
 	
 	@ParameterizedTest
