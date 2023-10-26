@@ -16,6 +16,7 @@ tomcat
 
 # Maven 
 target/
+.idea/
 
 # eclipse project file
 .settings/
