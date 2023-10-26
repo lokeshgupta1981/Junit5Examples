@@ -25,3 +25,4 @@
 * [JUnit 5 @BeforeAll](https://howtodoinjava.com/junit5/before-all-annotation-example/)
 * [JUnit 5 Execute Tests in Eclipse](https://howtodoinjava.com/junit5/execute-testcase-eclipse/)
 * [JUnit 5 XML Report Example](https://howtodoinjava.com/junit5/xml-reports/)
+* [JUnit 5 Non-Static @BeforeAll and @AfterAll](https://howtodoinjava.com/junit5/non-static-beforeall-afterall/)
