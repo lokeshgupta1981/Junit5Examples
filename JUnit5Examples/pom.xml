@@ -75,14 +75,11 @@
               junit.platform.reporting.output.dir = target/surefire-reports-open-xml
             </configurationParameters>
           </properties>
-          <argLine>
-            --illegal-access=permit
-          </argLine>
           <testFailureIgnore>true</testFailureIgnore>
           <!--<forkCount>2</forkCount>
           <reuseForks>true</reuseForks>
           <argLine>${surefireArgLine}</argLine>-->
-          <test>com.howtodoinjava.junit5.examples.xmlReport.HelloTest</test>
+          <!--<test>com.howtodoinjava.junit5.examples.xmlReport.HelloTest</test>-->
         </configuration>
       </plugin>
       <plugin>
