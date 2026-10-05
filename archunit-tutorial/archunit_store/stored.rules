@@ -1,0 +1,3 @@
+#
+#Mon Oct 05 00:12:08 IST 2026
+no\ classes\ should\ use\ field\ injection,\ because\ field\ injection\ is\ considered\ harmful;\ use\ constructor\ injection\ or\ setter\ injection\ instead;\ see\ https\://stackoverflow.com/q/39890849\ for\ detailed\ explanations=8de5995d-44d7-4840-a1ca-58dbafae9c16
