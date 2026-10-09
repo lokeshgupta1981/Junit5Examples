@@ -1,5 +1,6 @@
 # Related Tutorials
 
+* [JUnit 5 vs JUnit 6: What's New and Migration Guide](https://howtodoinjava.com/junit/junit-5-vs-junit-6/) ([junit-5-to-6-migration](junit-5-to-6-migration))
 * [JaCoCo Code Coverage with Maven](https://howtodoinjava.com/junit5/jacoco-test-coverage/)
 * [JUnit Generating HTML Reports](https://howtodoinjava.com/junit5/junit-html-report/)
 * [JUnit 5 Conditional Test Execution](https://howtodoinjava.com/junit5/conditional-test-execution/)
