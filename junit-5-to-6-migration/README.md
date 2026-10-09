@@ -2,11 +2,12 @@ Source code for the article https://howtodoinjava.com/junit/junit-5-vs-junit-6/
 
 A small project migrated from JUnit 5.14.4 to JUnit 6.1.3. Each test class uses a JUnit 5 API that JUnit 6 removed, deprecated or changed, with the JUnit 5 line kept as a comment.
 
-Versions: Java 25, Maven 3.9, JUnit 6.1.3, Maven Surefire 3.6.0
+Versions: Java 25, Maven 3.9, Gradle 9.1, JUnit 6.1.3, Maven Surefire 3.6.0
 
-Run:
+Run with Maven or Gradle (Gradle 9.1):
 
     mvn test
+    gradle test
 
 Run the CSV test that passes on JUnit 5 and fails on JUnit 6:
 
