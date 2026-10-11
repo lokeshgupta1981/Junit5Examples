@@ -1,0 +1,7 @@
+weight,fee
+0.5,3.99
+1.0,3.99
+# parcels between 1 and 5 kg
+2.5,7.99
+5.0,7.99
+12,14.99

@@ -1,0 +1,55 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.howtodoinjava'
+version = '1.0.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:6.1.3')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.junit.platform:junit-platform-suite'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.named('test', Test) {
+    useJUnitPlatform {
+        excludeEngines 'junit-platform-suite'
+        if (project.hasProperty('tags')) {
+            includeTags project.property('tags')
+        } else {
+            excludeTags 'slow'
+        }
+    }
+    testLogging {
+        events 'passed', 'skipped', 'failed'
+    }
+    filter {
+        excludeTestsMatching '*BadTagCheck'
+    }
+}
+
+tasks.register('fastTest', Test) {
+    testClassesDirs = sourceSets.test.output.classesDirs
+    classpath = sourceSets.test.runtimeClasspath
+    useJUnitPlatform {
+        excludeEngines 'junit-platform-suite'
+        includeTags 'fast'
+    }
+    testLogging {
+        events 'passed', 'skipped', 'failed'
+    }
+    filter {
+        excludeTestsMatching '*BadTagCheck'
+    }
+}

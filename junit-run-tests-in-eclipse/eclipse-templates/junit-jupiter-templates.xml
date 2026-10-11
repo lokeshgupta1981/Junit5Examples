@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<templates>
+<template autoinsert="false" context="java-members" deleted="false" description="@BeforeEach setup method (JUnit Jupiter)" enabled="true" name="setup_jupiter">${:import(org.junit.jupiter.api.BeforeEach)}@BeforeEach
+void setUp() {
+	${cursor}
+}</template>
+<template autoinsert="false" context="java-members" deleted="false" description="@AfterEach teardown method (JUnit Jupiter)" enabled="true" name="teardown_jupiter">${:import(org.junit.jupiter.api.AfterEach)}@AfterEach
+void tearDown() {
+	${cursor}
+}</template>
+<template autoinsert="false" context="java-members" deleted="false" description="@BeforeAll static setup method (JUnit Jupiter)" enabled="true" name="beforeall_jupiter">${:import(org.junit.jupiter.api.BeforeAll)}@BeforeAll
+static void setUpAll() {
+	${cursor}
+}</template>
+<template autoinsert="false" context="java-members" deleted="false" description="@ParameterizedTest with @CsvSource (JUnit Jupiter)" enabled="true" name="param_jupiter">${:import(org.junit.jupiter.params.ParameterizedTest, org.junit.jupiter.params.provider.CsvSource)}${staticImport:importStatic('org.junit.jupiter.api.Assertions.*')}@ParameterizedTest
+@CsvSource({
+	"${input}, ${expected}"
+})
+void ${testName}(String input, String expected) {
+	${cursor}
+}</template>
+</templates>
