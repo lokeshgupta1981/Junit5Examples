@@ -15,7 +15,7 @@
 * [JUnit 5 assertThrows(): Check Exception Type, Message, Cause](https://howtodoinjava.com/junit/assertthrows/) ([junit-assertthrows](junit-assertthrows))
 * [JUnit 5 vs JUnit 4: Differences and Migration Guide](https://howtodoinjava.com/junit/junit-5-vs-junit-4/) ([junit-5-vs-junit-4](junit-5-vs-junit-4))
 * [JUnit 6 Nullability with JSpecify: @Nullable and @NullMarked](https://howtodoinjava.com/junit/nullability/) ([junit-nullability](junit-nullability))
-* [JUnit 6 Tutorial: Write, Run and Read Your First Tests](https://howtodoinjava.com/junit/getting-started/) ([junit-getting-started](junit-getting-started))
+* [JUnit 6 Tutorial: Write, Run and Read Your First Tests](https://howtodoinjava.com/junit/getting-started-with-junit/) ([junit-getting-started](junit-getting-started))
 * [JUnit @AfterEach: Clean Up After Every Test (Examples)](https://howtodoinjava.com/junit/aftereach/) ([junit-aftereach](junit-aftereach))
 * [JUnit @AutoClose Annotation: Close Test Resources (Examples)](https://howtodoinjava.com/junit/junit-autoclose-examples/) ([junit-autoclose](junit-autoclose))
 * [JUnit @BeforeAll and @AfterAll: Run Setup Once per Class](https://howtodoinjava.com/junit/beforeall-afterall/) ([junit-beforeall-afterall](junit-beforeall-afterall))

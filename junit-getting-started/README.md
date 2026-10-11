@@ -1,4 +1,4 @@
-Source code for the article https://howtodoinjava.com/junit/getting-started/
+Source code for the article https://howtodoinjava.com/junit/getting-started-with-junit/
 
 JUnit 6 getting started example: a shopping cart and its first JUnit Jupiter tests.
 
